@@ -1,41 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lytContenedor"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tvminombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Escribe tu nombre"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="4dp" />
+        android:text="@string/escribe_tu_nombre" />
 
     <EditText
         android:id="@+id/etNombre"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="23dp" />
+        android:inputType="text"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btAceptar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="75dp" />
+        android:inputType="text"
+        android:text="Aceptar" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btDimeLaHora"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="148dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="Dime la hora" />
+</LinearLayout>
